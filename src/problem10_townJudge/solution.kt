@@ -2,8 +2,6 @@ package problem10_townJudge
 
 class Solution {
     fun findJudge(N: Int, trust: Array<IntArray>): Int {
-        // for findJudge(N=1, trust=[]) expected result is `1`
-        // looks like leetcode incorrect test case ¯\_(ツ)_/¯
         if (N == 1) return 1
 
         val trustRate = mutableMapOf<Int, Int>()
