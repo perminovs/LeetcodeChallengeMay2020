@@ -10,7 +10,7 @@ class Node(var value: Char?, val deep: Int) {
 
 
 class Trie {
-    var root: Node = Node(value = null, deep = 0)
+    private var root: Node = Node(value = null, deep = 0)
 
     /** Inserts a word into the trie. */
     fun insert(word: String) {
